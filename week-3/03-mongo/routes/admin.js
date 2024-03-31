@@ -11,8 +11,12 @@ router.post('/courses', adminMiddleware, (req, res) => {
     // Implement course creation logic
 });
 
-router.get('/courses', adminMiddleware, (req, res) => {
+router.get('/courses',adminMiddleware, (req, res) => {
     // Implement fetching all courses logic
+    console.log("Hi there")
+    res.json({
+        msg: "Hi there"
+    })
 });
 
 module.exports = router;
